@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .register-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .register-container h1, .register-container h2 {
+            margin: 0 0 20px;
+        }
+        .register-container h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .register-container h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .register-container select, .register-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .register-container button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #26ff00;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .register-container button:hover {
+            background-color: #05f921;
+        }
+        .form-group {
+            position: relative;
+            margin: 10px 0;
+            width: calc(100% - 20px);
+        }
+        .form-group label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        .form-group input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: white;
+            background-image: url('data:image/svg+xml,\
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23666666"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            cursor: pointer;
+        }
+        .form-group input[type="date"]::-webkit-inner-spin-button,
+        .form-group input[type="date"]::-webkit-clear-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>CHATARRERIA CALDAS</h1>
+        <h2>Registro de Usuario</h2>
+        <form>
+            <input type="text" name="full-name" placeholder="Nombre Completo" required>
+            <select name="document-type" required>
+                <option value="" disabled selected>Tipo de documento</option>
+                <option value="cedula-ciudadania">Cédula de Ciudadanía</option>
+                <option value="tarjeta-identidad">Tarjeta de Identidad</option>
+                <option value="cedula-extranjeria">Cédula de Extranjería</option>
+            </select>
+            <input type="text" name="document-number" placeholder="Número de Documento" required>
+            <div class="form-group">
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="email" name="confirm-email" placeholder="Confirmar Correo Electrónico" required>
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">REGISTRAR</button>
+        </form>
+    </div>
+</body>
+</html>
