@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #02222c;
+    color: #e1dada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo_ccaldas{
+    margin-left: 50px;
+    height: 10%;
+    width: 10%;
+}
+
+header #back{
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+
+}
+
+header #salir {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.register-container {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.register-container h1, .register-container h2 {
+    margin: 0 0 20px;
+}
+.register-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.register-container select, .register-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.register-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #26ff00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.register-container button:hover {
+    background-color: #05f921;
+}

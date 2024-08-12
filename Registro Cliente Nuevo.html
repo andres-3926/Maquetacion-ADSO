@@ -4,61 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Cliente Nuevo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .register-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        .register-container h1, .register-container h2 {
-            margin: 0 0 20px;
-        }
-        .register-container h1 {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .register-container h2 {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .register-container select, .register-container input {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .register-container button {
-            width: calc(100% - 20px);
-            padding: 10px;
-            background-color: #26ff00;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .register-container button:hover {
-            background-color: #05f921;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css/registro-client.css">
 </head>
 <body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo">
+        <button id="back" onclick="window.location.href='facturacion.html'">Volver</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
     <div class="register-container">
-        <h1>CHATARRERIA CALDAS</h1>
-        <h2>Registro Cliente Nuevo</h2>
+        <h1>Registrar nuevo cliente</h1>
         <form>
             <input type="text" name="full-name" placeholder="Nombre Completo" required>
             <select name="document-type" required>
