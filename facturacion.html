@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación</title>
+    <link rel="stylesheet" href="styles.css/facturacion.css">
+</head>
+<body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo">
+        <button id="home" onclick="window.location.href='dashboard-admin.html'">Home</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
+    <main>
+        <h2 class="bienvenida">Panel administrador</h2>
+        <h3>Facturación</h3>
+        <div class="menu-grid">
+            <div class="menu-item" id="compra" onclick="">
+                <img src="./img/buy.png" alt="Compra">
+                <span>Realizar una compra</span>
+            </div>
+            <div class="menu-item" id="venta">
+                <img src="./img/selling.png" alt="venta">
+                <span>Realizar una venta</span>
+            </div>
+            <div class="menu-item" id="cliente" onclick="window.location.href='Registro Cliente Nuevo.html'">
+                <img src="./img/client.png" alt="clientes">
+                <span>Registrar nuevo cliente</span>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js/facturacion.js"></script>
+</body>
+</html>

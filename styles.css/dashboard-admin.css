@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dce1e3;
+}
+
+header {
+    background-color: #02222c;
+    color: #e1dada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo_ccaldas{
+    margin-left: 50px;
+    height: 10%;
+    width: 10%;
+}
+
+header #salir {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.bienvenida{
+    font-style: oblique;
+    display: flex;
+    background-color: #dce1e3;
+    padding: 5px;
+    justify-content: stretch;
+    margin-left: 100px;
+}
+
+h3{
+    margin-left: 150px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 60px;
+    background-color: #dce1e3;
+}
+
+.menu-item {
+    background-color: rgb(255, 249, 249);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-item span {
+    display: block;
+    margin-top: 10px;
+}
+
+
+
