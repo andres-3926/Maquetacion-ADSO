@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar usuarios</title>
+    <link rel="stylesheet" href="./styles.css/actualizar_users.css">
+</head>
+<body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo">
+        <button id="back" onclick="window.location.href='administrar_usuarios.html'">Volver</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
+    <div class="register-container">
+        <h1>Actualizar usuario</h1>
+        <form>
+            <input type="text" name="full-name" placeholder="ID" required>
+            <input type="text" name="full-name" placeholder="Nombre" required>
+            <select name="document-type" required>
+                <option value="" disabled selected>Rol</option>
+                <option value="cedula-ciudadania">Administrador</option>
+                <option value="tarjeta-identidad">Cajero</option>
+                <option value="cedula-extranjeria">Contador</option>
+            </select>
+            <input type="text" name="document-number" placeholder="Nombre de usuario" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <button type="submit">ACTUALIZAR</button>
+        </form>
+    </div>
+</body>
+</html>

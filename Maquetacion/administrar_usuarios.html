@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel administrador</title>
+    <link rel="stylesheet" href="styles.css/administrar_users.css">
+</head>
+<body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="">
+        <button id="home" onclick="window.location.href='dashboard-admin.html'">Home</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
+    <main>
+        <h2 class="bienvenida">Panel administrador</h2>
+        <h3>Administrar usuarios</h3>
+        <div class="botones_usuarios">
+            <button id="add" onclick="window.location.href='Registro de Usuario.html'">Agregar</button>
+            <button id="update" onclick="window.location.href='actualizar_usuarios.html'">Editar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Rol</th>
+                    <th>Correo electrónico</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Migdali</td>
+                    <td>Cajero</td>
+                    <td>migdali@correo.com</td>
+                    <td><label class="switch">
+                        <input type="checkbox" id="userStatusSwitch">
+                        <span class="slider round"></span>
+                      </label>
+                      <span id="statusText"></span></td>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Andrés</td>
+                    <td>Cajero</td>
+                    <td>andres@correo.com</td>
+                    <td><label class="switch">
+                        <input type="checkbox" id="userStatusSwitch">
+                        <span class="slider round"></span>
+                      </label>
+                      <span id="statusText"></span></td>
+                    </td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>Brayan</td>
+                        <td>Contador</td>
+                        <td>brayan@correo.com</td>
+                        <td><label class="switch">
+                            <input type="checkbox" id="userStatusSwitch">
+                            <span class="slider round"></span>
+                          </label>
+                          <span id="statusText"></span></td>
+                        </td>
+                    </tr>
+                </tbody>
+            </tbody>
+        </table>
+        </body>
+        </html>
+        
+    </main>
+    <script src="scripts.js/dashboard_adm.js"></script>
+</body>
+</html>
