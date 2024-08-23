@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dce1e3;
+}
+header {
+    background-color: #02222c;
+    color: #e1dada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo_ccaldas{
+    margin-left: 50px;
+    height: 10%;
+    width: 10%;
+}
+
+header #home{
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+
+}
+
+header #salir {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.bienvenida{
+    font-style: oblique;
+    display: flex;
+    background-color: #dce1e3;
+    padding: 5px;
+    justify-content: stretch;
+    margin-left: 100px;
+}
+
+h3{
+    margin-left: 150px;
+}
+
+#add{
+    background-color: #099191;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+}
+#update{
+    background-color: #09914b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+}
+
+#delete{
+        background-color: #f44336;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 20px;
+        border: none;
+    }
+    
+.botones_usuarios{
+display: flex;
+justify-content: space-around;
+margin-left: 50%;
+padding: 20px;
+}
+
+
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
