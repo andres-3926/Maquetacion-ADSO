@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="styles.css/registro-compra.css">
 </head>
 <body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo">
+        <button id="back" onclick="window.location.href='facturacion.html'">Volver</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
     <div class="purchase-container">
-        <h1>CHATARRERIA CALDAS</h1>
-        <h2>Registro de Compra</h2>
+        <h1>Registro de Compras</h1>
         <div class="input-field">
             <h3>Recibo de Compra N°:</h3>
             <input type="text" id="recibo" readonly>
@@ -50,10 +54,6 @@
         </div>
         <hr>
         <div class="input-field">
-            <h3>Subtotal:</h3>
-            <input type="text" id="subtotal-mostrar" readonly>
-        </div>
-        <div class="input-field">
             <h3>Ajuste:</h3>
             <input type="text" id="ajuste" placeholder="Ajuste" required>
         </div>
@@ -65,7 +65,7 @@
             <h3>Cajero:</h3>
             <input type="text" name="cajero" placeholder="Nombre del Cajero" required>
         </div>
-        <button type="submit">Registrar</button>
+        <button type="submit" onclick="alert('Registro exitoso')">Registrar</button>
     </div>
     <script src="./scripts.js/reg_compra.js"></script>
 </body>

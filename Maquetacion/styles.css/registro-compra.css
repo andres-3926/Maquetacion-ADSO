@@ -1,14 +1,49 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #02222c;
+    color: #e1dada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo_ccaldas{
+    margin-left: 50px;
+    height: 10%;
+    width: 10%;
+}
+
+header #back{
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+
+}
+
+header #salir {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
 }
 .purchase-container {
     background-color: #fff;
+    margin: auto;
+    margin-top: 1%;
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -17,7 +52,7 @@ body {
     box-sizing: border-box;
     text-align: center; 
 }
-.purchase-container h1, .purchase-container h2, .purchase-container h3 {
+.purchase-container h1, .purchase-container h3 {
     margin: 0 0 6px;
 }
 .purchase-container h1 {
@@ -25,7 +60,7 @@ body {
     font-weight: bold;
     text-align: center; 
 }
-.purchase-container h2, .purchase-container h3 {
+.purchase-container h3 {
     font-size: 14px;
     font-weight: bold;
     margin-top: 10px;
