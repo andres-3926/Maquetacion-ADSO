@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Compra</title>
+    <link rel="stylesheet" href="./styles.css/panel_compra.css">
+</head>
+<body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo">
+        <button id="back" onclick="window.location.href='facturacion.html'">Volver</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
+    <div class="register-container">
+        <h1>Panel Compra</h1>
+        <form>
+            <!-- Nuevos campos para la compra -->
+            <input type="text" name="purchase-id" placeholder="Identificador Único de Compra" required>
+            <select name="product" required>
+                <option value="" disabled selected>Seleccione el Producto</option>
+                <!-- Aquí puedes añadir más opciones de productos -->
+                <option value="producto1">Producto 1</option>
+                <option value="producto2">Producto 2</option>
+                <option value="producto3">Producto 3</option>
+            </select>
+            <input type="number" name="quantity" placeholder="Cantidad" required>
+            <input type="text" name="price" placeholder="Precio" required>
+                        
+            <button type="submit">REGISTRAR</button>
+        </form>
+    </div>
+
+    <script src="./scripts.js/panel_compra.js"></script>
+</body>
+</html>
