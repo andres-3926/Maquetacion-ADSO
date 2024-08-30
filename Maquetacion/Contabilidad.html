@@ -8,28 +8,21 @@
 
 </head>
 <body>
-    <!-- Encabezado -->
     <header>
         <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo_ccaldas">
         <button id="home" onclick="window.location.href='dashboard-admin.html'">Home</button>
         <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
     </header>
-
-    <!-- Contenido Principal -->
     <main>
-        <h2 class="bienvenida">Panel De Contabilidad</h2>
+        <h2 class="bienvenida">Panel Administrador</h2>
         <h3>Contabilidad</h3>
-
-        <!-- Buscador de fechas -->
         <div class="buscador_Fecha">
             <label for="fechaInicio">Fecha de inicio:</label>
             <input type="date" id="fechaInicio">
             <label for="fechaFin">Fecha de fin:</label>
             <input type="date" id="fechaFin">
-            <button onclick="filtrarPorFechas()">Buscar</button>
+            <button id="boton-buscar" onclick="filtrarPorFechas()">Buscar</button>
         </div>
-
-        <!-- Tabla de Transacciones -->
         <table>
             <thead>
                 <tr>
@@ -37,7 +30,7 @@
                     <th>Fecha</th>
                     <th>Cliente</th>
                     <th>Identificación</th>
-                    <th>cantidad</th>
+                    <th>Cantidad</th>
                     <th>Descripción</th>
                     <th>Precio</th>
                     <th>Total compra</th>
@@ -45,7 +38,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Ejemplo de  transacciones -->
                 <tr>
                     <td>1</td>
                     <td>29/08/2024</td>
@@ -55,7 +47,7 @@
                     <td>Cobre quemado</td>
                     <td>20.000</td>
                     <td>200.000</td>
-                    <td>#</td>
+                    <td>N/A</td>
                     
                     
                 </tr>
@@ -70,7 +62,7 @@
                     <td>560kg</td>
                     <td>aluminio</td>
                     <td>2.500</td>
-                    <td>#</td>
+                    <td>N/A</td>
                     <td>1.400.000</td>
                     
                 </tr>
@@ -84,7 +76,7 @@
                     <td>Chatarra</td>
                     <td>600</td>
                     <td>27.000</td>
-                    <td>#</td>
+                    <td>N/A</td>git 
                     
                             
                     </tr>
@@ -93,10 +85,6 @@
         </table>
         </body>
         </html>
-        
     </main>
-    <script src="scripts.js/dashboard_adm.js"></script>
-    
-
 </body>
 </html>
