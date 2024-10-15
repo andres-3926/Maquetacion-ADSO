@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad</title>
+    <link rel="stylesheet" href="styles.css/Contabilidad.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo_ccaldas" src="./img/logo_ccaldas.png" alt="logo_ccaldas">
+        <button id="home" onclick="window.location.href='dashboard-admin.html'">Home</button>
+        <button id="salir" onclick="window.location.href='login Administrador.html'">Salir</button>
+    </header>
+    <main>
+        <h2 class="bienvenida">Panel Administrador</h2>
+        <h3>Contabilidad</h3>
+        <div class="buscador_Fecha">
+            <label for="fechaInicio">Fecha de inicio:</label>
+            <input type="date" id="fechaInicio">
+            <label for="fechaFin">Fecha de fin:</label>
+            <input type="date" id="fechaFin">
+            <button id="boton-buscar" onclick="filtrarPorFechas()">Buscar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Identificación</th>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Total compra</th>
+                    <th>Total Venta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>29/08/2024</td>
+                    <td>Stiven</td>
+                    <td>1006506392</td>
+                    <td>10kg</td>
+                    <td>Cobre quemado</td>
+                    <td>20.000</td>
+                    <td>200.000</td>
+                    <td>N/A</td>
+                    
+                    
+                </tr>
+
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>30/08/2024</td>
+                    <td>Andres</td>
+                    <td>1056734252</td>
+                    <td>560kg</td>
+                    <td>aluminio</td>
+                    <td>2.500</td>
+                    <td>N/A</td>
+                    <td>1.400.000</td>
+                    
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                    <td>01/09/2024</td>
+                    <td>Cris</td>
+                    <td>1297543483</td>
+                    <td>45kg</td>
+                    <td>Chatarra</td>
+                    <td>600</td>
+                    <td>27.000</td>
+                    <td>N/A</td>git 
+                    
+                            
+                    </tr>
+                </tbody>
+            </tbody>
+        </table>
+        </body>
+        </html>
+    </main>
+</body>
+</html>
